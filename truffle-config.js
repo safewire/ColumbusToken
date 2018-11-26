@@ -67,6 +67,15 @@ module.exports = {
       gasPrice: 4000000000,   // 4 gwei
     },
 
+    // Requires a local geth instance running
+    ooo_local: {
+      host: "127.0.0.1",
+      port: 44555,
+      network_id: '180918',
+      gas: 7000000,
+      gasPrice: 4000000000,   // 4 gwei
+    },
+
     // Another network with more advanced options...
     // advanced: {
       // port: 8777,             // Custom port

@@ -28,6 +28,14 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+var PrivateKeyProvider = require("truffle-privatekey-provider");
+
+require('dotenv').config()
+
+// Assign variables in a .env file
+var privateKey = process.env.PRIVATE_KEY;
+var infuraKey = process.env.INFURA_KEY;
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -65,6 +73,16 @@ module.exports = {
       network_id: '*',
       gas: 7000000,
       gasPrice: 4000000000,   // 4 gwei
+    },
+
+    // Uses Infura as the endpoint
+    infura_main: {
+      provider: function() {
+        return new PrivateKeyProvider(privateKey, `https://mainnet.infura.io/v3/${infuraKey}`)
+      },
+      network_id: '*',
+      gas: 7000000,
+      gasPrice: 3000000000,   // 3 gwei  
     },
 
     // Requires a local geth instance running

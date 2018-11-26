@@ -1,0 +1,34 @@
+{
+  "name": "columbustoken",
+  "version": "1.0.0",
+  "description": "Token prepared for Django meets blockchain workshop, Thu, Dec 13, 2018",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "openzeppelin-solidity": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Safechain/ColumbusToken.git"
+  },
+  "keywords": [
+    "ERC-20",
+    "Ethereum",
+    "Solidity",
+    "Python",
+    "Token"
+  ],
+  "author": "Brian McMichael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Safechain/ColumbusToken/issues"
+  },
+  "homepage": "https://github.com/Safechain/ColumbusToken#readme"
+}

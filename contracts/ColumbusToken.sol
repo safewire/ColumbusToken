@@ -88,6 +88,14 @@ contract ColumbusToken is IERC20 {
     }
 
     /**
+    * @dev Gets the balance of the caller's address.
+    * @return An uint256 representing the amount owned by the caller address.
+    */
+    function getBalance() public view returns (uint256) {
+        return balanceOf(msg.sender);
+    }
+
+    /**
      * @dev Function to check the amount of tokens that an owner allowed to a spender.
      * @param owner address The address which owns the funds.
      * @param spender address The address which will spend the funds.

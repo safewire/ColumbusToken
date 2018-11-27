@@ -38,7 +38,7 @@ print(f"ETH balance: {eth_balance}")
 
 
 # This is the address of the deployed ERC-20 contract. This should not be changed.
-# The new version of Web3 requires that we parse the address to a checksum address.
+# The Web3 1.0.0+ requires that we parse the address to a checksum address.
 CONTRACT_ADDRESS = Web3.toChecksumAddress('0x07c344edd719a356775e1fbd852c63dc46167b76')
 
 

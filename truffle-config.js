@@ -83,7 +83,7 @@ module.exports = {
       },
       network_id: '1',
       gas: 7000000,
-      gasPrice: 3000000000,   // 3 gwei
+      gasPrice: 9000000000,   // 9 gwei
     },
 
     // Uses Infura as the endpoint

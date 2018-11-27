@@ -1,7 +1,7 @@
 import json
 
 
-# Users will need to install web3 and eth_account
+# Users will need to install web3
 # `pip install web3`
 from web3 import Web3
 

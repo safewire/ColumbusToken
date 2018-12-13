@@ -1,3 +1,10 @@
+## Workshop Documentation
+
+[Django Meets Blockchain Workshop Site](https://taliotech.github.io/django-meets-blockchain-site/)
+
+
+## Installation steps
+
 1. Install truffle globally
 
 `npm install -g truffle`
